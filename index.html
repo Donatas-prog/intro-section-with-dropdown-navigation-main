@@ -10,30 +10,127 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    
   </style>
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
-
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
+  <nav class="navigation">
+    <div class="nav-bar">
+      <div class="snap">
+        <img src="images/logo.svg" alt="snap">
+      </div>
+    <div class="features">
+      <button class="features-button">Features</button>
+      <div class="features-drop">
+       <div><img src='images/icon-todo.svg' class="todo"><a href="#"></a>Todo List</a></div>
+       <div><img src="images/icon-calendar.svg" class="calendar">Calendar<a href="#"></a></div>
+       <div><img src="images/icon-reminders.svg" class="reminder"><a href="#"></a>Reminders</a></div>
+       <div><img src="images/icon-planning.svg" class="planning"><a href="#"></a>Planning</a></div>
+      </div>
+    </div>
+    <div class="company">
+      <button class="company-button">Company</button>
+      <div class="company-drop">
+        <div><a href="#">History</a></div>
+        <div><a href="#">Our Team</a></div>
+        <div><a href="#">Blog</a></div>
+      </div>
+    </div>
+    <div class="careers">Careers</div>
+    <div class="about">About</div>
+   </div>
+    <form class="login-register">
+    <input type="text" name="email" class="login" placeholder="Login">
+    <input type="button" name="button" class="register-button" value="Register">
+    </form>
+  </nav>
+  <div class="navigation-collapsed">
+  <nav>
+    <div class="closeBtn">
+      <img src="images/icon-close-menu.svg" id="close-menu" class="hidden">
+    </div>
+     <div class="features margin">
+      <button class="features-button">Features</button>
+      <div class="features-drop">
+       <div class="da"><img src='images/icon-todo.svg' class="todo"><a href="#"></a>Todo List</a></div>
+       <div class="da"><img src="images/icon-calendar.svg" class="calendar">Calendar<a href="#"></a></div>
+       <div class="da"><img src="images/icon-reminders.svg" class="reminder"><a href="#"></a>Reminders</a></div>
+       <div class="da"><img src="images/icon-planning.svg" class="planning"><a href="#"></a>Planning</a></div>
+      </div>
+    </div>
+    <div class="company margin">
+      <button class="company-button">Company</button>
+      <div class="company-drop">
+        <div><a href="#">History</a></div>
+        <div><a href="#">Our Team</a></div>
+        <div><a href="#">Blog</a></div>
+      </div>
+    </div>
+    <div class="careers margin">Careers</div>
+    <div class="about margin">About</div>
+   
+    <form class="login-register margin">
+    <input type="text" name="email" class="login" placeholder="Login">
+    <input type="button" name="button" class="register-button" value="Register">
+    </form>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </nav>
+</div>
+  <main class="container">
+   <nav class="mobile-nav">
+    <div class="mobile-snap">
+      <img src="images/logo.svg" alt="mobile-snap">
+    </div>
+    <div id="menuBtn">
+      <img src="images/icon-menu.svg"  id="menu">
+    </div>
+   </nav> 
+    
+      <section class="main-side">
+        <div class="left-side">
+        <h1>Make <span>remote work</span></h1>
+        <p>Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.</p>
+          <button class="left-side-button">Learn more</button>
+          <div class="image-corner">
+            <div class="first">
+              <img src="images/client-databiz.svg" alt="data" class="first-img">
+            </div>
+            <div class="second">
+              <img src="images/client-audiophile.svg" alt="audio" class="first-img">
+            </div>
+            <div class="third">
+              <img src="images/client-meet.svg" alt="meet" class="first-img">
+            </div>
+            <div class="fourth">
+              <img src="images/client-maker.svg" alt="maker" class="first-img">
+            </div>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="desktop">
+          <img src="images/image-hero-desktop.png" class="desktop-side">
+        </div>
+        <div class="mobile">
+          <img src="images/image-hero-mobile.png" class="mobile-side">
+        </div>
+      </div>
+      </section>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Donatas Bucionis</a>.
+      </div>
+  </main>
+
+  
+  
+
+  
+
+  
+  
+  
+  <script defer src="script.js"></script>
 </body>
 </html>

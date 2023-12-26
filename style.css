@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: auto;
+    width: 100%;
+}
+.container {
+    width: 70%;
+    margin: 0 auto;
+    font-family: 'Epilogue', sans-serif;
+    
+}
+.snap {
+    padding: 1rem;
+}
+.mobile-nav {
+    display: none;
+}
+.navigation-collapsed {
+    display: none;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+.nav-bar {
+    display: flex;
+    margin: 1.5rem;
+}
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 8%);
+}
+.features-button {
+    border: none;
+    background-color: initial;
+    cursor: pointer;
+    font-size: .9rem;
+}
+
+.features {
+    cursor: pointer;
+    position: relative;
+    background-image: url(images/icon-arrow-down.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 4.9rem 1.5rem;
+    z-index: 1;
+    min-height: 1rem;
+    padding: 1rem;
+}
+.features-drop div {
+    padding: .5rem;
+    text-decoration: none;
+    color: hsl(0, 0%, 8%);
+}
+.features-drop, img {
+    margin-right: .5rem;
+}
+.features-drop {
+    display: inline-block;
+    display: none;
+    position: absolute;
+    top: 2.5rem;
+    right: -1rem;
+    background-color: hsl(0, 0%, 98%);
+    width: 8rem;
+    white-space: nowrap;
+    box-shadow: 0px 2px 6px hsl(0, 0%, 41%);
+    border-radius: .6rem;
+}
+.features:hover .features-drop {
+    display: block;
+}
+.features:hover {
+    background-image: url(images/icon-arrow-up.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 4.9rem 1.5rem;
+    
+}
+.company {
+    position: relative;
+    background-image: url(images/icon-arrow-down.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 5.2rem 1.5rem;
+    padding: 1rem;
+    
+}
+.company-drop {
+    display: inline-block;
+    display: none;
+    background-color: hsl(0, 0%, 98%);
+    border-radius: .6rem;
+    box-shadow: 0px 5px 10px hsl(0, 0%, 41%);
+    width: 6rem;
+    position: absolute;
+    top: 2.5rem;
+    white-space: nowrap;
+}
+.company-drop, div {
+    padding: .5rem;
+    text-decoration: none;
+    color: hsl(0, 0%, 8%)
+}
+.company:hover {
+    background-image: url(images/icon-arrow-up.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 5.2rem 1.5rem;
+}
+.company:hover .company-drop {
+    display: block;
+}
+.company-button {
+    border: none;
+    background-color: initial;
+    cursor: pointer;
+    font-size: .9rem;
+    
+}
+
+.login-register {
+    display: flex;
+    margin: 2rem;
+}
+.register-button {
+    display: inline-block;
+    height: 3rem;
+    width: 6rem;
+    border-radius: .5rem;
+    background-color: hsl(0, 0%, 98%);
+    font-size: .9rem;
+    cursor: pointer;
+}
+.login {
+    border: none;
+    max-width: 6rem;
+    height: 2rem;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+.main-side {
+    display: grid;
+    grid-template-columns: minmax(200px, 50%) 1fr;
+    margin: 0 auto;
+    
+}
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.left-side-button {
+    width: 8rem;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+    padding: .8rem 0rem;
+    border: 1px solid hsl(0, 0%, 8%);
+    border-radius: .5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.left-side-button:hover {
+   color: hsl(0, 0%, 98%);
+   background-color: hsl(0, 0%, 8%);
+}
+.mobile-side {
+    display: none;
+}
+.desktop-side {
+ width: 100%;
+ max-width: 450px;
+ height: auto;
+}
+.right-side {
+    width: 100%;
+    margin: 0 auto;
+}
+.image-corner {
+    display: flex;
+    
+}
+.first-img  {
+    width: 100%;
+    height: auto;
+    min-width: 3.5rem;
+}
+h1 {
+    margin-top: 6rem;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+p {
+    font-size: 18px;
+    color: hsl(0, 0%, 41%);
+    line-height: 1.5rem;
+    font-weight: 500;
+    margin-right: 2rem;
+}
+.about {
+    /* display: inline-block; */
+    cursor: pointer;
+    padding: 1rem;
+}
+.careers {
+    padding: 1rem;
+}
+.attribution { 
+    font-size: 11px; text-align: center;
+ }
+.attribution a { 
+        color: hsl(228, 45%, 44%);
+    }
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: auto;
+        
+    }
+    .mobile-side {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+    .mobile-nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem;
+    }
+    .desktop-side {
+        display: none;
+    }
+    .navigation {
+        display: none;
+    }
+    .navigation-collapsed {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: left;
+        opacity: 0;
+        right: -500px;
+        width: 65%;
+        background-color: hsl(0, 0%, 98%);
+        height: 100vh;
+        position: absolute;
+        right: 0rem;
+        top: 0rem;
+    }
+    .active.navigation-collapsed{
+        opacity: 1;
+        background-color: hsl(0, 0%, 98%);
+        position: absolute;
+        z-index: 1;
+        /* pointer-events: fill; */
+    }
+    .close.navigation-collapsed {
+       opacity: 0;
+    }
+    .close#close-menu {
+        opacity: 0;
+    }
+    .blur.container {
+        /* opacity: .2; */
+        background-color: #958b8bde;
+        z-index: 0;
+        position: absolute;
+    }
+    .features {
+        margin-top: 3rem;
+        
+    }
+    .features-drop {
+        position: relative;
+        top: .8rem;
+        left: 0rem;
+    }
+    .company-drop {
+        position: relative;
+        top: .8rem;
+        left: 0rem;
+    }
+
+    .margin {
+        margin-left: 1rem;
+    }
+    .login-register {
+        align-items: center;
+    }
+    .login {
+        background-color: transparent;
+        margin-bottom: 2rem;
+    }
+    .register-button {
+        width: 100%;
+    }
+    .right-collapsed {
+      width: 100%;
+    }
+    .left-collapsed {
+        width: 50%;
+        background-color: black;
+        height: 100vh;
+    }
+    #close-menu {
+        position: absolute;
+        right: 1.6rem;
+        top: 1.6rem;
+    }
+    #menu {
+        z-index: 2;
+        width: fit-content;
+        height: auto;
+        margin: 30px;
+        position: absolute;
+        right: 2px;
+        top: 0px;
+        border-radius: 4px;
+        cursor: pointer;
+        
+      }
+    .login-register {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-side {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-content: center;
+        margin: 0 auto;
+        width: 100%;
+
+    }
+    .left-side {
+        max-width: 100%;
+        min-height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .left-side-button {
+        min-width: 8rem;
+        border: none;
+        color: hsl(0, 0%, 98%);
+        background-color: hsl(0, 0%, 8%);
+        margin: 1.5rem;
+    }
+    h1 {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1.7rem;
+        margin: 1.5rem 0rem;
+        font-size: 1.9rem;
+    }
+    p {
+        text-align: center;
+        font-size: .9rem;
+    }
+    span {
+        margin-left: .4rem;
+    }
+    .first-img {
+        width: 100%;
+        height: auto;
+    }
+     
+}
